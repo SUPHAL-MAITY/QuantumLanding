@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QuantumP</title>
-  <style>
-   
-      *{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuantumP</title>
+    <style>
+      * {
         box-sizing: border-box;
-        margin: 0 ;
-        padding: 0 ;
+        margin: 0;
+        padding: 0;
       }
 
       body {
         background-color: aliceblue;
         color: white;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      input{
+        padding: 2px 8px;
+      }
+
+      textarea{
+        padding: 4px 8px;
       }
 
       header {
@@ -49,10 +61,9 @@
         margin-right: 20px;
         font-size: 1.5em;
       }
-         .mobile_nav{
-          display: none;
-        }
-       
+      .mobile_nav {
+        display: none;
+      }
 
       .right_head button {
         width: 120px;
@@ -144,7 +155,7 @@
         padding: 10px;
       }
 
-        .card {
+      .card {
         background-color: aqua;
         height: 350px;
         width: 280px;
@@ -170,38 +181,35 @@
         align-items: center;
       }
 
-      .card_heading{
+      .card_heading {
         font-size: 24px;
         margin-bottom: 20px;
       }
 
-      .card_para{
-        
+      .card_para {
         margin: 0 10px 20px 10px;
       }
 
-      .card_list{
-        list-style-type:none;
+      .card_list {
+        list-style-type: none;
       }
 
-      .card_points{
+      .card_points {
         margin: 5px;
       }
 
-      .card_img{
+      .card_img {
         width: 50px;
         height: 50px;
       }
 
       .criteria_section {
-       
         width: 100%;
         background-color: #013a63;
         display: flex;
         flex-direction: row;
         gap: 8px;
         padding: 20px;
-        
       }
 
       .criteria_left {
@@ -210,9 +218,9 @@
         padding: 30px;
       }
 
-        #criteria_left_heading{
-            font-size: 52px;
-        }
+      #criteria_left_heading {
+        font-size: 52px;
+      }
 
       .criteria_left p {
         margin-top: 20px;
@@ -239,15 +247,14 @@
         display: flex;
       }
 
-      .box_left{
+      .box_left {
         width: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
       }
 
-      .box_right{
+      .box_right {
         width: 70%;
         color: black;
         display: flex;
@@ -255,7 +262,7 @@
         justify-content: center;
       }
 
-      .box_left_img_holder{
+      .box_left_img_holder {
         background-color: #102190;
         display: flex;
         justify-content: center;
@@ -263,8 +270,6 @@
         height: 70%;
         padding: 10px;
       }
-
-
 
       .story_section {
         min-height: 400px;
@@ -294,41 +299,35 @@
         margin-top: 8px;
       }
 
-      .get_in_touch{
+      .get_in_touch {
         padding: 40px;
         background-color: #013a63;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-
       }
 
-
-
-      .get_in_touch_heading{
+      .get_in_touch_heading {
         text-align: center;
         font-size: 52px;
         margin-bottom: 20px;
-
       }
 
-      .get_in_touch_box{
-             width: 500px;
-             text-align: center;
-      }
-
-      .get_in_touch_box p{
+      .get_in_touch_box {
+        width: 500px;
         text-align: center;
-       
-
       }
 
-      .get_in_touch_cards{
+      .get_in_touch_box p {
+        text-align: center;
+      }
+
+      .get_in_touch_cards {
         display: flex;
       }
 
-      .contact_card{
+      .contact_card {
         width: 300px;
         height: 80px;
         background-color: white;
@@ -337,28 +336,27 @@
         display: flex;
         color: black;
         justify-content: space-evenly;
-       align-items: center;
+        align-items: center;
       }
 
-      .getIntouchBox{
+      .getIntouchBox {
         width: 50px;
-        
+
         height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
-
       }
 
-       .getIntouchBox img{
+      .getIntouchBox img {
         width: 60px;
         height: 40px;
-       }
+      }
 
-       .getInTouchRightBox{
+      .getInTouchRightBox {
         display: flex;
         flex-direction: column;
-       }
+      }
 
       .form_section {
         padding: 20px;
@@ -411,75 +409,61 @@
         border-radius: 8px;
       }
 
-    
-
-
-
       footer {
-        background-color: #013a63 ;
+        background-color: #013a63;
         display: flex;
         flex-direction: column;
         padding: 10px;
-
       }
 
-      .footer_up{
-
+      .footer_up {
         display: flex;
-
-
       }
 
-
-      .footer_up_icons{
-       width: 40%;
-       padding: 20px 30px;
+      .footer_up_icons {
+        width: 40%;
+        padding: 20px 30px;
       }
 
-      .footer_up_icons h3{
+      .footer_up_icons h3 {
         margin-bottom: 20px;
       }
-      .footer_icons{
+      .footer_icons {
         margin: 20px 0;
       }
 
-      .footer_up_sections{
+      .footer_up_sections {
         width: 20%;
         margin: 20px 0;
       }
 
-      .footer_up_sections h3{
+      .footer_up_sections h3 {
         margin-bottom: 20px;
         font-size: 24px;
       }
 
-     .footer_up_sections ul{
-      list-style-type: none;
-     
+      .footer_up_sections ul {
+        list-style-type: none;
       }
-      .footer_up_sections ul li{
+      .footer_up_sections ul li {
         margin: 4px;
       }
 
+      @media screen and (max-width: 1048px) {
+        .get_in_touch_cards {
+          flex-direction: column;
+        }
 
+        .criteria_section {
+          flex-direction: column;
+          text-align: center;
+        }
 
-     @media screen and  (max-width:1048px){
-       .get_in_touch_cards{
-        flex-direction: column;
-       }
-
-       .criteria_section{
-        flex-direction: column;
-        text-align: center;
-       }
-
-       .criteria_section ul li{
-        list-style-type:none;
-        margin: 5px;
-       }
-
-     }
-
+        .criteria_section ul li {
+          list-style-type: none;
+          margin: 5px;
+        }
+      }
 
       @media (max-width: 768px) {
         .right_head button {
@@ -491,145 +475,120 @@
           margin-bottom: 12px;
         }
 
-         #hero_btn{
-            width: 300px;
-            font-size: 20px;
-         }
+        #hero_btn {
+          width: 300px;
+          font-size: 20px;
+        }
 
-     
-
-        .box{
-            width: 90vw;
+        .box {
+          width: 90vw;
         }
 
         .box:nth-of-type(3) {
           margin-bottom: 20px;
         }
-        
-        #criteria_left_heading{
-            font-size: 32px;
+
+        #criteria_left_heading {
+          font-size: 32px;
         }
 
-       .get_in_touch_cards{
-        display: flex;
-        flex-direction: column;
+        .get_in_touch_cards {
+          display: flex;
+          flex-direction: column;
+        }
       }
 
-      
-
-
-      }
-
-
-      @media (max-width:480px){
-
-        .mobile_nav{
+      @media (max-width: 480px) {
+        .mobile_nav {
           display: flex;
           margin-right: 30px;
         }
 
-        .mobile_nav_img{
+        .mobile_nav_img {
           width: 30px;
         }
-       
-      .brand_section img {
-          display: flex;
-      }
 
-       nav a{
-        display: none;
-       }
+        .brand_section img {
+          display: flex;
+        }
+
+        nav a {
+          display: none;
+        }
         #hero_text {
           font-size: 24px;
           text-align: center;
-          
         }
-        .features{
-            flex-direction: column;
-        }
-
-        .indi_feature{
-            margin-bottom: 40px;
+        .features {
+          flex-direction: column;
         }
 
-        .feature_head{
-            margin-bottom: 10px;
-        }
-        .expertise_para{
-            text-align: center;
+        .indi_feature {
+          margin-bottom: 40px;
         }
 
-        .expertise{
-            margin-top: 20px;
+        .feature_head {
+          margin-bottom: 10px;
+        }
+        .expertise_para {
+          text-align: center;
         }
 
-        #criteria_left_heading{
-            font-size: 28px;
+        .expertise {
+          margin-top: 20px;
         }
 
+        #criteria_left_heading {
+          font-size: 28px;
+        }
 
-        
+        .card {
+          height: 380px;
+        }
 
-     .card{
-        height: 380px;
-     }
+        .story_card p {
+          font-size: 16px;
+        }
 
-      .story_card p {
-        
-        font-size: 16px;
+        .story_card h2 {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+
+        .form_section form {
+          height: 400px;
+        }
+
+        .get_in_touch_box {
+          width: 90%;
+          display: flex;
+          justify-content: center;
+        }
+
+        .footer_up {
+          flex-direction: column;
+        }
+
+        .footer_up_icons {
+          width: 100%;
+          text-align: center;
+        }
+
+        .footer_up_sections {
+          width: 100%;
+          text-align: center;
+        }
       }
-
-      .story_card h2{
-        font-size: 32px;
-        margin-bottom: 20px;
-      }
-
-     .form_section form{
-            height: 400px;
-         }
-
-
-         
-      .get_in_touch_box{
-      
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        
-
-      }
-
-    
-
-       .footer_up{
-
-       flex-direction: column;
-
-
-      }
-
-      .footer_up_icons{
-        width: 100% ;
-        text-align: center;
-      }
-
-      
-      .footer_up_sections{
-        width: 100%;
-        text-align: center;
-        
-      }
-
-
-      }
-
     </style>
-</head>
-<body>
-  <header>
+  </head>
+  <body>
+    <header>
       <div class="brand_section">
         <h2>QuantumP</h2>
-        <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/quantump-1.jpeg" alt="logo..." />
+        <img
+          src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/quantump-1.jpeg"
+          alt="logo..."
+        />
       </div>
 
       <nav>
@@ -643,13 +602,19 @@
       </div>
 
       <div class="mobile_nav">
-          <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/ham.png" alt="..." class="mobile_nav_img">
+        <img
+          src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/ham.png"
+          alt="..."
+          class="mobile_nav_img"
+        />
       </div>
     </header>
 
     <section class="hero_section">
       <h1 id="hero_text">QuantumP Consulting group</h1>
+      <a href="#service_card">
       <button id="hero_btn">Explore our services -></button>
+      </a>
       <div class="features">
         <div class="indi_feature">
           <span class="feature_head">500+</span>
@@ -680,99 +645,135 @@
       </div>
     </section>
 
-    <section class="card_section">
+    <section class="card_section" id="service_card">
       <div class="cards_top">
+        <a href="https://quantump.in">
+          <div class="card">
+            <div class="image_holder">
+              <img
+                src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/scholar.png"
+                alt=""
+                class="card_img"
+              />
+            </div>
+            <h3 class="card_heading">EdTech Solutions</h3>
+
+            <p class="card_para">
+              Revolutionizing education through innovative technology platforms
+              , learning management system , and digital learning experience.
+            </p>
+
+            <ul class="card_list">
+              <li class="card_points">Learning Management Systems</li>
+              <li class="card_points">Student Analysis</li>
+              <li class="card_points">Virtual Classroom</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="#contact_form">
+          <div class="card">
+            <div class="image_holder">
+              <img
+                src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/code.png"
+                alt=""
+                class="card_img"
+              />
+            </div>
+            <h3 class="card_heading">IT Consulting</h3>
+
+            <p class="card_para">
+              Strategic technology consulting to help business make infomed
+              decisions and accelerate their digital transformation journey.
+            </p>
+
+            <ul class="card_list">
+              <li class="card_points">Technology Strategy</li>
+              <li class="card_points">Digital Transformation</li>
+              <li class="card_points">Architecture Design</li>
+            </ul>
+          </div>
+        </a>
+        
+        <a href="#contact_form">
         <div class="card">
           <div class="image_holder">
-            <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/scholar.png" alt="" class="card_img">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/setting.png"
+              alt=""
+              class="card_img"
+            />
           </div>
-          <h3 class="card_heading"> EdTech Solutions</h3>
+          <h3 class="card_heading">IT Services</h3>
 
-          <p class="card_para">Revolutionizing education through innovative technology platforms , learning management system , and 
-              digital learning experience.
+          <p class="card_para">
+            Comprehensive IT service including cloud migration cybersecurity ,
+            infrastructure management and ongoing support .
           </p>
 
-         <ul class="card_list">
-            <li class="card_points">Learning Management Systems</li>
-            <li class="card_points">Student  Analysis  </li>
-            <li class="card_points">Virtual Classroom </li>
-        </ul>
-
-        </div>
-        <div class="card">
-           <div class="image_holder">
-              <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/code.png" alt="" class="card_img">
-           </div>
-          <h3 class="card_heading"> IT  Consulting</h3>
-
-          <p class="card_para">Strategic technology consulting to help business 
-make  infomed decisions and accelerate   their digital   transformation  journey.
-          </p>
-
-         <ul class="card_list">
-            <li class="card_points">Technology Strategy</li>
-            <li class="card_points">Digital Transformation  </li>
-            <li class="card_points">Architecture Design </li>
-        </ul>
-          
-        </div>
-
-        <div class="card">
-           <div class="image_holder">
-              <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/setting.png" alt="" class="card_img">
-           </div>
-          <h3 class="card_heading"> IT  Services</h3>
-
-          <p class="card_para">Comprehensive IT service including cloud migration  cybersecurity , infrastructure  management and ongoing   support .
-          </p>
-
-         <ul class="card_list">
+          <ul class="card_list">
             <li class="card_points">Cloud Migration</li>
-            <li class="card_points">Cybersecurity  </li>
+            <li class="card_points">Cybersecurity</li>
             <li class="card_points">Infrastructure Management</li>
-        </ul>
+          </ul>
         </div>
+        </a>
 
+        <a href="#contact_form">
         <div class="card">
-           <div class="image_holder">
-              <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/profile.png" alt="" class="card_img">
-           </div>
-          <h3 class="card_heading"> Talent Acquisition</h3>
+          <div class="image_holder">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/profile.png"
+              alt=""
+              class="card_img"
+            />
+          </div>
+          <h3 class="card_heading">Talent Acquisition</h3>
 
-          <p class="card_para">Connecting  top-tier  technology   talent 
-with leading organisation through our specialised recruitment and staffing  solutions 
+          <p class="card_para">
+            Connecting top-tier technology talent with leading organisation
+            through our specialised recruitment and staffing solutions
           </p>
 
-         <ul class="card_list">
+          <ul class="card_list">
             <li class="card_points">Technical Recruitment</li>
-            <li class="card_points">Contract Staffing   </li>
-            <li class="card_points">Skills Assessment   </li>
-        </ul>
+            <li class="card_points">Contract Staffing</li>
+            <li class="card_points">Skills Assessment</li>
+          </ul>
         </div>
-        <div class="card">
-           <div class="image_holder">
-              <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/cart.png" alt="" class="card_img">
-           </div>
-          <h3 class="card_heading"> EdTech Solutions</h3>
+        </a>
 
-          <p class="card_para">Revolutionizing education through innovative technology platforms , learning management system , and 
-              digital learning experience.
+        <a href="#contact_form">
+        <div class="card">
+          <div class="image_holder">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/cart.png"
+              alt=""
+              class="card_img"
+            />
+          </div>
+          <h3 class="card_heading">E -commerce</h3>
+
+          <p class="card_para">
+            Building powerful e-comerce platforms that drive sales  enhance customer experience , and scale   with your business growth
           </p>
 
-         <ul class="card_list">
-            <li class="card_points">Learning Management Systems</li>
-            <li class="card_points">Student  Analysis  </li>
-            <li class="card_points">Virtual Classroom </li>
-        </ul>
+          <ul class="card_list">
+            <li class="card_points">Platform Development</li>
+            <li class="card_points">Payment Integration</li>
+            <li class="card_points">Analytics & optimization</li>
+          </ul>
         </div>
-      </div>
+        </a>
 
-      
+      </div>
     </section>
 
     <section class="criteria_section">
       <div class="criteria_left">
-        <h3 id="criteria_left_heading">Transforming Business With Quantum precision</h3>
+        <h3 id="criteria_left_heading">
+          Transforming Business With Quantum precision
+        </h3>
         <p>
           At QuantumP Consulting Group , we combine deep industry expertise with
           innovative technology solutions to help business achieve unprecedented
@@ -788,49 +789,60 @@ with leading organisation through our specialised recruitment and staffing  solu
       </div>
       <div class="criteria_right">
         <div class="box">
-           <div class="box_left">
-             <div class="box_left_img_holder">
-                <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/bulb-2.png" alt="" class="">
-             </div>
-           </div>
-           <div class="box_right">
-              <h3>Innovation</h3>
-              <p>Pioneering  solutions that push the boundaries of technology</p>
-           </div>
+          <div class="box_left">
+            <div class="box_left_img_holder">
+              <img
+                src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/bulb-2.png"
+                alt=""
+                class=""
+              />
+            </div>
+          </div>
+          <div class="box_right">
+            <h3>Innovation</h3>
+            <p>Pioneering solutions that push the boundaries of technology</p>
+          </div>
         </div>
 
         <div class="box">
-            <div class="box_left">
-             <div class="box_left_img_holder">
-                <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/ex.png" alt="" class="">
-             </div>
-           </div>
-           <div class="box_right">
-              <h3>Excellance</h3>
-              <p>Delivering outstanding results that  exceed expectations</p>
-           </div>
+          <div class="box_left">
+            <div class="box_left_img_holder">
+              <img
+                src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/ex.png"
+                alt=""
+                class=""
+              />
+            </div>
+          </div>
+          <div class="box_right">
+            <h3>Excellance</h3>
+            <p>Delivering outstanding results that exceed expectations</p>
+          </div>
         </div>
         <div class="box">
-           <div class="box_left">
-             <div class="box_left_img_holder">
-                <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/globe.png" alt="" class="">
-             </div>
-           </div>
-           <div class="box_right">
-              <h3>Global Reach</h3>
-              <p>Serving clients worldwide with localized expertise</p>
-           </div>
+          <div class="box_left">
+            <div class="box_left_img_holder">
+              <img
+                src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/globe.png"
+                alt=""
+                class=""
+              />
+            </div>
+          </div>
+          <div class="box_right">
+            <h3>Global Reach</h3>
+            <p>Serving clients worldwide with localized expertise</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="story_section">
       <div class="card story_card">
-        <h2 >Our Story</h2>
+        <h2>Our Story</h2>
         <p>
-           QuantumP emerged from a vision to
-          bridge the gap between cutting-edge technology and practical business
-          solutions.
+          QuantumP emerged from a vision to bridge the gap between cutting-edge
+          technology and practical business solutions.
         </p>
         <p>
           Our multidisciplinary team brings together expertise from quantum
@@ -851,140 +863,237 @@ with leading organisation through our specialised recruitment and staffing  solu
         <p>
           Our mission is to empower businesses with cutting-edge IT solutions,
           connect them with exceptional talent, and drive learning through
-          innovative educational experiences. 
+          innovative educational experiences.
         </p>
       </div>
       <div class="card story_card">
         <h2>Our Core Values</h2>
 
-        
         <p>
-          Innovation is the process of turning creative ideas into practical solutions that add real value.
-          We leverage cutting edge technologies and quantum inspired
-          methodologies to deliver unprecedented results.
+          Innovation is the process of turning creative ideas into practical
+          solutions that add real value. We leverage cutting edge technologies
+          and quantum inspired methodologies to deliver unprecedented results.
         </p>
 
-        
         <p>
-           We build lasting partnership through
-          transparent communication and exceptional service.
+          We build lasting partnership through transparent communication and
+          exceptional service.
         </p>
       </div>
     </section>
 
     <section class="get_in_touch">
-         <h3 class="get_in_touch_heading">Get in touch</h3>
-         <div class="get_in_touch_box">
-            <p class="">We're here to help you navigate the quantum leap into digital transformation . Reach out through any of  these channels, and our team will respond  promptly.</p>
-         </div>
+      <h3 class="get_in_touch_heading">Get in touch</h3>
+      <div class="get_in_touch_box">
+        <p class="">
+          We're here to help you navigate the quantum leap into digital
+          transformation . Reach out through any of these channels, and our team
+          will respond promptly.
+        </p>
+      </div>
 
-         <div class="get_in_touch_cards">
-          <div class="contact_card">
-            <div class="getIntouchBox">
-               <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/email-1.png" alt="">
-            </div>
-
-            <div class="getInTouchRightBox">
-              <span class="">Email Us</span>
-              <span class="">hello@quantump.com</span>
-            </div>
-             
-          </div>
-            <div class="contact_card">
-            <div class="getIntouchBox">
-               <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/location_on-1.png" alt="">
-            </div>
-
-            <div class="getInTouchRightBox">
-              <span class="">Visit Us</span>
-              <span class="">San Fransisco,CA</span>
-            </div>
-             
-          </div>
-            <div class="contact_card">
-            <div class="getIntouchBox">
-               <img src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/phone-1.png" alt="">
-            </div>
-
-            <div class="getInTouchRightBox">
-              <span class="">Call Us</span>
-              <span class="">+1 (555) 123-4567</span>
-            </div>
-             
+      <div class="get_in_touch_cards">
+        <div class="contact_card">
+          <div class="getIntouchBox">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/email-1.png"
+              alt=""
+            />
           </div>
 
-         </div>
-       
+          <div class="getInTouchRightBox">
+            <span class="">Email Us</span>
+            <span class="">hello@quantump.com</span>
+          </div>
+        </div>
+        <div class="contact_card">
+          <div class="getIntouchBox">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/location_on-1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="getInTouchRightBox">
+            <span class="">Visit Us</span>
+            <span class="">San Fransisco,CA</span>
+          </div>
+        </div>
+        <div class="contact_card">
+          <div class="getIntouchBox">
+            <img
+              src="https://quantumpdotin.wordpress.com/wp-content/uploads/2025/08/phone-1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="getInTouchRightBox">
+            <span class="">Call Us</span>
+            <span class="">+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="form_section">
-      <form action="">
+    <section class="form_section" id="contact_form">
+      <form
+        action="https://formsubmit.co/00f488d81722bf59c70a888bf8a276b4"
+        method="POST"
+      >
         <h3 class="form_heading">Start Your Project Today</h3>
+
+        <!-- Hidden fields -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://group.quantump.in//thank-you.html"
+        />
+
+        <!-- Name fields -->
         <div class="form_name_div">
-          <input type="text" class="form_name" />
-          <input type="text" class="form_name" />
+          <input
+            type="text"
+            name="first_name"
+            class="form_name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            class="form_name"
+            placeholder="Last Name"
+            required
+          />
         </div>
-        <input type="text" class="form_value" />
-        <input type="text" class="form_value" />
-        <textarea name="" class="form_value"></textarea>
-        <button class="form_btn">Send Message</button>
+
+        <!-- Contact info -->
+        <input
+          type="email"
+          name="email"
+          class="form_value"
+          placeholder="Your Email"
+          required
+        />
+        <input
+          type="number"
+          name="pnone"
+          class="form_value"
+          placeholder="Phone Number"
+          required
+        />
+
+        <!-- Message -->
+        <textarea
+          name="message"
+          class="form_value"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <!-- Submit -->
+        <button type="submit" class="form_btn">Send Message</button>
       </form>
     </section>
 
     <footer class="">
-   
       <div class="footer_up">
-         
-      <div class="footer_up_icons">
-        
-        <h3 class="">QuantumP</h3>
-        <p class="">Transforming business through cutting edge  technology solutions. We're your trusted partner in digital transformation across multiple verticals.</p>
-        <div class="footer_icons">
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M216 26H40a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14m2 190a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2ZM94 112v64a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0m88 28v36a6 6 0 0 1-12 0v-36a22 22 0 0 0-44 0v36a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0v2.11A34 34 0 0 1 182 140M98 84a10 10 0 1 1-10-10a10 10 0 0 1 10 10"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 18.5C3.765 19.521 5.814 20 8 20c6.48 0 11.762-5.137 11.992-11.562L22 4.5l-3.354.5A4 4 0 0 0 16 4c-2.572 0-4.5 2.517-3.88 4.98c-3.552.23-6.771-1.959-8.633-4.875c-1.236 4.197-.09 9.251 3.013 12.366c0 1.176-3 1.878-4.5 2.029"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>  
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M14.95 3.684L8.637 8.912a1 1 0 0 1-1.276 0l-6.31-5.228A1 1 0 0 0 1 4v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-.05-.316M2 2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m-.21 1l5.576 4.603a1 1 0 0 0 1.27.003L14.268 3z"/></svg>
-       </div>
+        <div class="footer_up_icons">
+          <h3 class="">QuantumP</h3>
+          <p class="">
+            Transforming business through cutting edge technology solutions.
+            We're your trusted partner in digital transformation across multiple
+            verticals.
+          </p>
+          <div class="footer_icons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M216 26H40a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14m2 190a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2ZM94 112v64a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0m88 28v36a6 6 0 0 1-12 0v-36a22 22 0 0 0-44 0v36a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0v2.11A34 34 0 0 1 182 140M98 84a10 10 0 1 1-10-10a10 10 0 0 1 10 10"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M2 18.5C3.765 19.521 5.814 20 8 20c6.48 0 11.762-5.137 11.992-11.562L22 4.5l-3.354.5A4 4 0 0 0 16 4c-2.572 0-4.5 2.517-3.88 4.98c-3.552.23-6.771-1.959-8.633-4.875c-1.236 4.197-.09 9.251 3.013 12.366c0 1.176-3 1.878-4.5 2.029"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M14.95 3.684L8.637 8.912a1 1 0 0 1-1.276 0l-6.31-5.228A1 1 0 0 0 1 4v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-.05-.316M2 2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m-.21 1l5.576 4.603a1 1 0 0 0 1.27.003L14.268 3z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="footer_up_sections">
+          <h3 class="">Services</h3>
+          <ul>
+            <li>EdTech solutions</li>
+            <li>IT Consulting</li>
+            <li>IT Services</li>
+            <li>Talent Acquistion</li>
+            <li>E-Commerce</li>
+          </ul>
+        </div>
+        <div class="footer_up_sections">
+          <h3 class="">Company</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Case Studies</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="footer_up_sections">
+          <h3 class="">Support</h3>
+          <ul>
+            <li>Contact Us</li>
+            <li>Documentation</li>
+            <li>Help Center</li>
+            <li>Status Page</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer_up_sections">
-         <h3 class="">Services</h3>
-        <ul>
-          <li>EdTech solutions</li>
-          <li>IT Consulting</li>
-          <li>IT Services</li>
-          <li>Talent Acquistion</li>
-          <li>E-Commerce</li>
-        </ul>
-      </div>
-      <div class="footer_up_sections">
-              <h3 class="">Company</h3>
-        <ul>
-          <li>About Us</li>
-          <li>Our Team</li>
-          <li>Careers</li>
-          <li>Case Studies</li>
-          <li>Blog</li>
-        </ul>
-      </div>
-      <div class="footer_up_sections">
-         <h3 class="">Support</h3>
-        <ul>
-          <li>Contact Us</li>
-          <li>Documentation</li>
-          <li>Help Center</li>
-          <li>Status Page</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-
-      </div>
-      <div class="footer_down">
-
-
-      </div>
-      
-
+      <div class="footer_down"></div>
     </footer>
-
-</body>
+  </body>
 </html>
