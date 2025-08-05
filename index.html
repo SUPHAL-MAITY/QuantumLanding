@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Width Vercel Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #333;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      width: 100%;
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background-color: #007acc;
+      color: white;
+    }
+
+    #about {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    #contact {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Home Section</h1>
+    <p>Welcome to the full-width landing page.</p>
+  </section>
+
+  <section id="about">
+    <h1>About Section</h1>
+    <p>This is the about section of the page.</p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact Section</h1>
+    <p>This is the contact section of the page.</p>
+  </section>
+
+</body>
+</html>
